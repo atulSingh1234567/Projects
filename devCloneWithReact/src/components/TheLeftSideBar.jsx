@@ -13,6 +13,7 @@ export default function TheLeftSideBar() {
   
   return (
     
+    
       <div className={`leftsidebar-div ${showMenu? 'ham-button-clicked' : 'leftsidebar-div'}`}>
         <div className={`${showMenu? 'hamafter-effect' : 'hambefore-effect'}`}>
           <h3>Dev Community</h3>

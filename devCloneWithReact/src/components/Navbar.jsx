@@ -3,18 +3,8 @@ import logo from '../assets/dev-community-icon.svg'
 import searchIcon from '../assets/icons8-search-50.png'
 import hamBurgerIcon from '../assets/icons8-hamburger-menu-50.png'
 import { useHamburgerContext } from '../contexts/Mycontext'
+import { NavLink } from 'react-router-dom'
 
-export function LoginButton(){
-  return (
-    <a href="#" className='navbar-login-link'>Log in</a>
-  )
-}
-
-export function CreateAccButton(){
-   return(
-    <a href="#" className='navbar-createacc-link'>Create account</a>
-   )
-}
 
 export default function Navbar() {
   const {hamClick} = useHamburgerContext()
@@ -34,8 +24,8 @@ export default function Navbar() {
 
       <div className='navbar-login-div'>
       <button className='navbar-login-search-button'><img src={searchIcon} alt="icon" className='search-btn-img' /></button>
-        <a href="#" className='navbar-login-link'>Log in</a>
-        <a href="#" className='navbar-createacc-link'>Create account</a>
+        <NavLink to="/login" className='navbar-login-link'>Log in</NavLink>
+        <NavLink to="/create-account" className='navbar-createacc-link'>Create account</NavLink>
       </div>
     </nav>
 

@@ -5,9 +5,9 @@ export default function Home() {
     
     <div className='homePage-mid-section'>
         <ul>
-            <NavLink className={({isActive}) => `${isActive? 'homePage-active-link': 'homePage-inactive-link'} homePage-link`} to='#'>Relevant</NavLink>
-            <NavLink className={({isActive}) => `${isActive? 'homePage-active-link': 'homePage-inactive-link'} homePage-link`} to='#'>Latest</NavLink>
-            <NavLink className={({isActive}) => `${isActive? 'homePage-active-link': 'homePage-inactive-link'} homePage-link`} to='#'>Top</NavLink>
+            <NavLink className={({isActive}) => `${isActive? 'font-bold': 'font-thin'} hover:text-blue-800`} to=''>Relevant</NavLink>
+            <NavLink className={({isActive}) => `${isActive? 'font-bold': 'font-thin'} hover:text-blue-800`} to='/latest'>Latest</NavLink>
+            <NavLink className={({isActive}) => `${isActive? 'font-bold': 'font-thin'} hover:text-blue-800`} to='/top'>Top</NavLink>
         </ul>
     </div>
         

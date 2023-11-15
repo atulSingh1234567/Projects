@@ -7,10 +7,11 @@ export default function RightSideBar() {
     <div className='right-side-div'>
       
       {
-        ObjectForRightside.map((val)=>{
+        ObjectForRightside.map((val , index)=>{
             return <RightsideCard
               section = {val.section}
               topic = {val.topic}
+              key = {Date.now()}
             />
         })
       }

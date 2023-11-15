@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 export default function RightsideCard(props) {
  
@@ -11,7 +11,7 @@ export default function RightsideCard(props) {
           {
             props.topic.map(function (val) {
               return (
-                <div className='right-li-item'>
+                <div key={val.id} className='right-li-item'>
                   <li className={`right-headline`}>{val.headline}</li>
                   <li className='right-comment'>{val.comments} comments</li>
                 </div>

@@ -1,8 +1,7 @@
 import React from 'react'
 import ObjectForMidside from '../SomeJSONojects/ObjectForMidside'
 
-export default function MidCard(props) {
-    let i = 0;
+export default function MidCard() {
     return (
         <div className='mid-card-div'>
             {
