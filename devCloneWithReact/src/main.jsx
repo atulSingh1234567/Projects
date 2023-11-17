@@ -11,6 +11,8 @@ import {
 import Layout from './components/Layout.jsx';
 import  CreateAccComp  from './components/CreateAccComp.jsx';
 import LoginComp from './components/LoginComp.jsx';
+import RelevantPage from './components/RelevantPage.jsx';
+import Latestpage from './components/Latestpage.jsx';
 
  const router = createBrowserRouter([
   {
@@ -19,7 +21,17 @@ import LoginComp from './components/LoginComp.jsx';
     children: [
       {
         path: '',
-        element: <App/>
+        element: <App/>,
+        children: [
+          {
+            path: '',
+            element: <RelevantPage />
+          },
+          {
+            path: '/latest',
+            element: <Latestpage />
+          }
+        ]
       },
       {
         path: 'create-account',

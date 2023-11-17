@@ -9,7 +9,7 @@ export default function RelevantPage() {
 
   return (
     
-        <MidCard/>      
+        <MidCard sort = {false}/>      
     
   )
 }

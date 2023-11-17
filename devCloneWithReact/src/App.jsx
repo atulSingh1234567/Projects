@@ -1,4 +1,5 @@
 
+import { Outlet } from 'react-router-dom'
 import './App.css'
 import Home from './components/Home'
 import Navbar from './components/Navbar'
@@ -28,7 +29,8 @@ function App() {
        <TheLeftSideBar/>
        <div className='mid-main-div'>
        <Home/>
-       <RelevantPage />
+       {/* <RelevantPage /> */}
+       <Outlet/>
        </div>
        <RightSideBar/>
     </div>

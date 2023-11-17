@@ -400,7 +400,7 @@ button{
   box-shadow: 0px 0px 100px rgba(128, 128, 128, 0.418);
   background-color: white;
   width: 80%;
-  height:fit-content;
+  height:100%;
   z-index: 99;
 }
 
