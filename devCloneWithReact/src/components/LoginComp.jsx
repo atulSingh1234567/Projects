@@ -31,7 +31,7 @@ export default function LoginComp() {
         <label htmlFor="email">Email</label>
         <input type="email" name='email' onChange={(e) => setEmail(e.target.value)} value={Email} className='w-full rounded-lg border-2 border-grey-900 h-10 focus:outline-none focus:border-blue-800 hover:border-3 hover:border-grey-950 px-4' />
         <label htmlFor="password">Password</label>
-        <input type="password" onChange={(e) => setPass(e.target.value)} name='password' className='w-full rounded-lg border-2 border-grey-900 h-10 focus:outline-none focus:border-blue-800 hover:border-3 hover:border-grey-900 px-4'/>
+        <input type="password" onChange={(e) => setPass(e.target.value) } name='password' className='w-full rounded-lg border-2 border-grey-900 h-10 focus:outline-none focus:border-blue-800 hover:border-3 hover:border-grey-900 px-4'/>
       </div>
 
       <div className='flex justify-between w-5/12 my-2 login-page-input'>
